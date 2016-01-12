@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: Nostalrius AcceptTrade
+## Version: 1.0
+## Notes: A visual adjustment for the new feature on Nostalrius which blocks to accept a Trade after items changed for 2seconds to prevent scams.
+## Author: Virose(LYQ)
+
+main.lua
