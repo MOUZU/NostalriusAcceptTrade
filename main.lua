@@ -1,7 +1,7 @@
 local lastChange = 0
 local f = CreateFrame("Frame")
 f:SetScript('OnEvent', function()
-        if event == "TRADE_MONEY_CHANGED" or event == "TRADE_PLAYER_ITEM_CHANGED" then
+        if event == "TRADE_MONEY_CHANGED" or event == "TRADE_PLAYER_ITEM_CHANGED" or event == "TRADE_TARGET_ITEM_CHANGED" then
             lastChange = GetTime()
         elseif event == "TRADE_SHOW" then
             f:SetScript('OnUpdate', function()
@@ -17,5 +17,6 @@ f:SetScript('OnEvent', function()
     end)
 f:RegisterEvent("TRADE_MONEY_CHANGED")
 f:RegisterEvent("TRADE_PLAYER_ITEM_CHANGED")
+f:RegisterEvent("TRADE_TARGET_ITEM_CHANGED")
 f:RegisterEvent("TRADE_SHOW")
 f:RegisterEvent("TRADE_HIDE")
